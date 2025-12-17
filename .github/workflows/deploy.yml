@@ -22,3 +22,7 @@ jobs:
         run: |
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
+
+      - name: 시크릿 값 사용
+        run: |
+          echo ${{ secrets.MY_NAME }}
